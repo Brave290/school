@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUFORD - online practicals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Header icon" type="image-jpg" href="logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+<nav>
+    <a href="index.html"><img src="logo.png"></a>
+    <div class="nav-links" id="navLinks">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSE</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    </nav>
+
+<h1>Contact Us</h1>
+    </section>
+
+ <!------contact us-------->  
+
+<section class="contact-us">
+    <div class="row">  
+        <div class="contact-col">
+            <div>
+            <img src="location.png">
+            <span>
+            <h5>CAC Road, Iraye</h5>
+            <p>Epe, Lagos, NIG</p>
+            </div>
+        </span>
+        <div>
+            <img src="phone-call.png">
+            <span>
+            <h5>+234 8089589719</h5>
+            <p>Monday to Friday, 12pm to 5pm</p>
+            </div>
+        </span>
+        <div>
+            <img src="email.png">
+            <span>
+            <h5>Legateakanjimusab@gmail.com</h5>
+            <p>Email us your query</p>
+            </div>
+        </span>
+        </div>
+</div>
+</div>
+<div class="form-col">
+        <div class="form-col">
+        <form action="https://formspree.io/f/xvgojbgw" method="post">
+           <input type="text" name="name" placeholder="Enter Your Name" required>
+           <input type="email" name="email" placeholder="Enter Your Email address" required>
+           <input type="text" name="subject" placeholder="Enter Your Subject" required> 
+           <textarea rows="8" name="message" placeholder="Your Message" required></textarea>
+           <button type="submit" class="form-btn">Send Message</button>
+        </form>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+<!------Footer--------->
+
+<section class="footer">
+    <h4>Our Social Links</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Dolorem possimus dignissimos minus, perferendis tenetur porro fugiat sed fugit, eos rem aspernatur, provident magnam illum. Explicabo ullam pariatur id et! Molestiae.</p>
+    <div class="social-links">
+        <a href="#" target="_blank" class="social-icon">
+            <img src="facebook (1).png" alt="Facebook">
+        </a>
+        <a href="#" target="_blank" class="social-icon">
+            <img src="phone-call.png" alt="phone number">
+        </a>
+        <a href="#" target="_blank" class="social-icon">
+            <img src="IMG_8074.PNG" alt="Instagram">
+        </a>
+    </div>
+    <p>Made with🖤By <a href="">Akanji Mus'ab</a></p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" onclick="scrollToTop()"><img src="arrow.png"></button>
+
+<style>
+        /* Scroll to Top Button */
+        #scroll-to-top {
+            position: fixed;
+            bottom: 5px;
+            justify-content: left;
+            right: 20px;
+            font-size: 15px ;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            background: #fff;
+            border-radius: 100%;
+            cursor: pointer;
+            display: none;
+        }
+        #scroll-to-top img{
+            color: rgb(255, 255, 255);
+            width: 28px;
+            border-radius: 50px;
+        }
+</style>
+<script>
+   // Scroll to Top Button
+        window.onscroll = function () {
+            const scrollTopBtn = document.getElementById('scroll-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        }
+function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+     var navLinks = document.getElementById("navLinks");
+     function showMenu(){
+        navLinks.style.right = "0"
+     }
+     
+     function hideMenu(){
+        navLinks.style.right = "-200px"
+     }
+
+</script>
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+</body>
+</html>
